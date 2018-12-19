@@ -3,33 +3,22 @@
 A tarefa consistia em obter trechos de reviews/comentários que respeitassem dois padrões pré-estabelecidos. O dataset é composto de 1000 frases curtas contento liguagem não muito estruturada. Os padrões são relativos às classes gramaticais das palavras em cada uma dessas frases. O uso de bibliotecas é livre assim como o tipo/modelo de POSTagger a ser usado.
 
 ## Organização do projeto
+```
 .
 ├── data
-
 │ └── reviews_test_estag_nlp.txt
-
 ├── main.py
-
 ├── Makefile
-
 ├── Readme.md
-
 ├── requirements.txt
-
 ├── results
-
 │ ├── opinions_with_aubt.txt
-
 │ ├── opinions_with_brill.txt
-
 │ └── opinions_with_spacy.txt
-
 └── taggers
-
 │ ├── mac_morpho_aubt.pickle
-
 │ └── mac_morpho_brill_aubt.pickle
-
+```
 
 | Folder/File | Description |
 | ------ | ------ |
