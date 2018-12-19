@@ -59,3 +59,9 @@ O programa carrega as reviews do arquivo texto e os modelos dos POS-taggers. Ap�
 Os dois taggers treinados apresentados acima são treinados com o dataset mac_morpho contido no NLTK. O backoff tagger apresentou uma precisão de teste  de 90%, enquanto o brill apresentou uma precisão de teste de 97%.
 
 No final o resultado aparenta não ser muito afetado pelo uso de diferentes taggers.
+
+## Conclusão
+No final os resultados ficaram bons mais ainda ocorrem alguns erros devido a classificação errônea por parte dos taggers e erros de digitação no dataset. Entretanto o resultado foi relativamente bom para todos os taggers utilizados.
+
+## Reflexões
+Pelo que eu interpretei do projeto, o intuito de separar esses patterns seria o de minerar opiniões sobre aspectos dos produtos. Com isso, mesmo vários padrões terem sido obtidos corretamente, alguns deles não servem como opiniões sobre produtos. Em um ambiente com mais informações, poderia-se identificar qual produto aquele comentário se refere e consultar alguma lista de características desse produto, podendo assim filtrar de maneira muito mais eficiente as opiniões. Outra sugestão seria somente identificar qual a classe do produto no qual a review se baseia e utilizar um modelo bag of words para entender os substantivos que mais aparecem com determinadas classes de produtos. Esse seria um jeito de se obter uma base de características relativas a cada produto (Celular: tela, velocidade, som, câmera etc).
