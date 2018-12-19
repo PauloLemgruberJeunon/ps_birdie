@@ -5,18 +5,18 @@ A tarefa consistia em obter trechos de reviews/comentários que respeitassem doi
 ## Organização do projeto
 .
 ├── data
-│   └── reviews_test_estag_nlp.txt
+│ └── reviews_test_estag_nlp.txt
 ├── main.py
 ├── Makefile
 ├── Readme.md
 ├── requirements.txt
 ├── results
-│   ├── opinions_with_aubt.txt
-│   ├── opinions_with_brill.txt
-│   └── opinions_with_spacy.txt
+│ ├── opinions_with_aubt.txt
+│ ├── opinions_with_brill.txt
+│ └── opinions_with_spacy.txt
 └── taggers
-│   ├── mac_morpho_aubt.pickle
-│   └── mac_morpho_brill_aubt.pickle
+│ ├── mac_morpho_aubt.pickle
+│ └── mac_morpho_brill_aubt.pickle
 
 | Folder/File | Description |
 | ------ | ------ |

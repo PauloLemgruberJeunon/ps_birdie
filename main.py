@@ -36,7 +36,7 @@ class Taggers:
             print('[WARNING] Portuguse model not found...')
             print('Download it using ./venv/bin/python3 -m spacy download pt')
 
-        print('POS Tagger\'s modules loaded')
+        print('Modules loaded')
         return aubt_tagger, brill_tagger, nlp_tool
 
     @staticmethod
@@ -134,9 +134,12 @@ def extract_patterns(tagged_sent, patterns_tree, tree_max_depth):
         opinion = ''
         # The j is the offset while searching for a pattern that started on i
         for j in range(tree_max_depth):
+            # Checks to see if it is inside the bounds of the array
             if j + i < len(tagged_sent):
                 curr_tag = Taggers.normalize_tag(tagged_sent[i + j][1])
+                # Checks if the current tag is following a pattern
                 if curr_tag in curr_tree_level:
+                    # Checks reached the end of the pattern
                     if curr_tree_level[curr_tag] is None:
                         opinion += tagged_sent[i + j][0]
                         opinions.append(opinion)
