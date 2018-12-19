@@ -3,6 +3,7 @@ install:
 	virtualenv -p python3 ./venv
 	./venv/bin/pip install -r requirements.txt
 	./venv/bin/python -m spacy download pt
+	./venv/bin/python ./install_nltk.py
 	git clone https://github.com/burgersmoke/nltk-trainer.git
 
 train:
